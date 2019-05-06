@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container{
+  position: relative;
+  width: 90%;
+  height: 85%;
+  background-color: #999;
+  left: 5%;
+  top: 3%;
+  border-radius: 40px;
+  box-shadow: 0 0 7 0 #999;
+  padding-top: 20px; 
+}
+
+.pencarian {
+  margin: 45px auto 25px auto;
+  font-size: 15px;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.pencarian input {
+  padding: 8px 10px;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 5px;
+  color: black;
+  outline: none !important;
+}
+
+.pencarian button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(118, 107, 160);
+  color: white;
+  cursor: pointer;
+  outline: none !important;
+  transition: all .2s ease-in-out;
+}
+
+.pencarian button:hover {
+  background-color: salmon;
+}
+
+.pencarian button:active {
+  transform: scale(2, 2);
+}
+
+.tabel {
+  border: 3px solid black;
+  width: 97%;
+  overflow: auto;
+  margin: 40px auto;
+}
+
+.tabel tbody:first-child tr {
+  background-color: salmon;
+  text-transform: capitalize;
+}
+
+.tabel tbody:nth-child(odd):not(:first-child) tr {
+  background-color: #ddd;
+  text-transform: capitalize;
+}
+
+.tabel tbody:nth-child(even):not(:first-child) tr {
+  background-color: salmon;
+}
+
+.tabel tbody:not(:first-child) tr:hover {
+  background-color: #888;
+
+}
+
+.tabel tr td {
+  padding: 10px;
+}
+
+.not-found {
+  display: inline-block;
+  background-color:#f79bef;
+  color: white;
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 75px;
+  margin-right: 8px;
+  transition: all .5s ease-in-out;
+}
+
+.tabel strong {
+  background:#f79bef;
+  color: white;
+  font-style: italic;
+}
+
+.loading-data {
+  width: 44px;
+  margin: 35px auto;
+  display: block;
+}
+
+img.loading-data.table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#label, #hasil {
+  text-align: center;
+}
